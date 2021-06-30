@@ -7,8 +7,8 @@ print ("media: ", media)
 
 minimo = datos['vote_count'].quantile(0.90)
 print(minimo)
-
-pelicula_p= datos.copy().loc[datos['vote_count'] >= minimo]
+#hola
+pelicula_p = datos.copy().loc[datos['vote_count'] >= minimo]
 print(pelicula_p.shape)
 
 def rating_ponderado(x, minimo=minimo, media=media):
