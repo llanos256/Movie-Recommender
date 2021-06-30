@@ -20,3 +20,4 @@ pelicula_p['score'] = pelicula_p.apply(rating_ponderado, axis=1)
 pelicula_p = pelicula_p.sort_values('score', ascending=False)
 
 print(pelicula_p[['title', 'vote_count', 'vote_average', 'score']].head(10))
+h = 0
